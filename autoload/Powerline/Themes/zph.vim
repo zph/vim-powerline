@@ -1,16 +1,17 @@
 let g:Powerline#Themes#zph#theme = Pl#Theme#Create(
   \ Pl#Theme#Buffer(''
           \ , 'paste_indicator'
-          \ , 'mode_indicator'
           \ , 'scrollpercent'
           \ , 'lineinfo'
           \ , 'hgrev:branch'
+          \ , Pl#Segment#Truncate()
           \ , 'fileinfo'
           \ , 'syntastic:errors'
           \ , Pl#Segment#Truncate()
           \ , 'tagbar:currenttag'
           \ , Pl#Segment#Split()
           \ , 'filetype'
+          \ , Pl#Segment#Truncate()
           \ , 'fugitive:branch'
   \ ),
 	\
